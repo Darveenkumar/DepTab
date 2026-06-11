@@ -6,18 +6,18 @@
 
 .inv-root {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: 1fr 1fr; /* Locked to maintain 2 on each side */
+  gap: 16px; 
   background: transparent;
-  margin-top: 3px; /* Added 3px gap at the top */
+  margin-top: 3px;
 }
 
 /* --- LIQUID GLASS CARDS --- */
 .inv-card {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 16px 18px;
+  gap: 16px;
+  padding: 20px 24px;
   text-decoration: none;
   cursor: pointer;
   position: relative;
@@ -70,13 +70,13 @@
 
 /* --- INNER CONTENT --- */
 .inv-icon {
-  width: 42px;
-  height: 42px;
+  width: 48px; 
+  height: 48px; 
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 26px; 
   flex-shrink: 0;
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: relative;
@@ -88,25 +88,25 @@
 
 .inv-name {
   font-family: 'Orbitron', sans-serif;
-  font-size: 12px;
+  font-size: 15px; 
   font-weight: 700;
   color: #ffffff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   letter-spacing: 0.04em;
 }
 
 .inv-sub {
   font-family: system-ui, -apple-system, sans-serif;
-  font-size: 11px;
+  font-size: 13px; 
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.02em;
 }
 
 .inv-arr {
-  font-size: 18px;
+  font-size: 20px; 
   flex-shrink: 0;
   opacity: 0.4;
   transition: all 0.2s ease;
